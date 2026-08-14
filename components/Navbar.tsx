@@ -37,12 +37,12 @@ export default function Navbar() {
               Sobre
             </Link>
             
-            <button className="flex items-center gap-1 text-gray-500 hover:text-[#003366] transition-colors">
+            <Link href="/segmentos" className={`${getLinkClasses("/segmentos")} flex items-center gap-1`}>
               Segmentos
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
               </svg>
-            </button>
+            </Link>
             
             <Link href="/catalogo" className={`${getLinkClasses("/catalogo")} flex items-center gap-1`}>
               Catálogo
